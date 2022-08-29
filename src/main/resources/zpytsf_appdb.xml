@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<bonecp-config>
+	<default-config>
+		<!--config Ref: http://chirs1012f.iteye.com/blog/805261 -->
+		<property name="driverClass" value="com.mysql.jdbc.Driver" />
+		<!-- jdbc:sqlserver://192.168.0.20:1433;databaseName=zgh_tsf_web_db -->
+		<!-- <property name="jdbcUrl">jdbc:mysql://127.0.0.1:3306/zpytsf_app?characterEncoding=UTF8&amp;characterSetResults=UTF8</property> -->
+		<!-- <property name="jdbcUrl">jdbc:sqlserver://192.168.0.202:1433;databaseName=zpytsf_app</property> -->
+		<property name="jdbcUrl">jdbc:sqlserver://127.0.0.1:1444;databaseName=cems_v_1_1_5</property>
+		<property name="username">sa</property>
+		<property name="password">123456</property>
+		<property name="poolName">appl</property>
+		<property name="maxConnectionsPerPartition" >10</property>
+		<property name="minConnectionsPerPartition" >3</property>
+		<property name="partitionCount" >4</property>		
+		<property name="connectionTimeout">3000</property>
+		<property name="statementsCacheSize" >0</property>
+		<property name="idleConnectionTestPeriod" >10</property>
+		<property name="connectionTestStatement" >SELECT getdate();</property>
+	</default-config>
+</bonecp-config>   
